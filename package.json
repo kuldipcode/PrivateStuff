@@ -1,0 +1,33 @@
+{
+  "name": "node_dealer",
+  "version": "1.0.0",
+  "description": "node.js ",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.1"
+  },
+  "devDependencies": {
+    "express": "^4.15.2"
+  },
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuldipcode/node_dealer.git"
+  },
+  "keywords": [
+    "nodejs",
+    "angularjs",
+    "html"
+  ],
+  "author": "Kuldip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuldipcode/node_dealer/issues"
+  },
+  "homepage": "https://github.com/kuldipcode/node_dealer#readme"
+}

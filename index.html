@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app = "DealerApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <author> Kuldip </author>
+    <title>Dealer Page</title> 
+    <style>
+        #notion{
+            color: red;
+        }
+    </style>
+</head>
+<body ng-controller = "mainCtrl">
+    <h1>Dealer </h1>
+    <p id = "notion">**Shuffles a standard deck of 52 cards by clicking the button</p>
+    <p>For every card that is in the correct suited row, add one point<br>For every card that is in the correct value column, add one point<br>Max Points = 104</p>
+    <div id = "showMatrix">
+        <div id = "Display">
+            <h3>(S) {{cards[0]}}</h3>
+            <h3>(D) {{cards[1]}}</h3>
+            <h3>(H) {{cards[2]}}</h3>
+            <h3>(C) {{cards[3]}}</h3>
+        </div>
+        <h4>Percentage of Corrent Order = {{mypoint}}</h4>
+        <h4>Average Percentage of History= {{avepoint}}</h4>
+        <button ng-click="getShuffle()">Deal Again</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src = "app.js"></script>
+</body>
+</html>
